@@ -1,0 +1,17 @@
+.box{
+	width:300px;
+	height:300px;
+	border:3px solid brown;
+	margin:30px auto;
+	border-radius:50%;
+	position:relative;
+}
+.ball{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background-color:indigo;
+	position:absolute;
+	top:-15px;
+	left:135px;
+}

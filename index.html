@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="ball"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			var ball = $(".ball");
+			var r = 0;
+			var t = setInterval(function(){
+				r = (r+1)%360;
+				var x = 150*Math.cos(r/180*Math.PI)+135;
+				var y = 150*Math.sin(r/180*Math.PI)+135;
+				ball.css({
+					top:y+"px",
+					left:x+"px",
+				})
+			},10)
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
